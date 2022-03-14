@@ -3,8 +3,10 @@ module.exports = {
     locales: ['en', 'de'],
     defaultLocale: 'en',
   },
-  rewrites: [{
-    source: '/api/event',
-    destination: 'https://www.example.com/api/event',
-  }],
+  async rewrites() {
+    return [{
+      source: '/api/event',
+      destination: 'https://www.example.com/api/event',
+    }];
+  },
 };
