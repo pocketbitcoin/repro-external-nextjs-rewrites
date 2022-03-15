@@ -7,6 +7,7 @@ module.exports = {
     return [{
       source: '/api/event',
       destination: 'https://www.example.com/api/event',
+      locale: false,
     }];
   },
 };
